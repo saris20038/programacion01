@@ -13,7 +13,7 @@ MENSAJE_T_MUYALTO = "Sus niveles son muy altos (WARNING)"
 
 pregunta_triglicerido = "Cual es el resultado de los triglicéridos: "
 triglicerido = float(input(pregunta_triglicerido))
-isOptimo =  triglicerido < 149
+isOptimo =  triglicerido < 150
 isLimite = triglicerido >= 150 and triglicerido <= 199
 isAlto = triglicerido >= 200 and triglicerido <= 499
 isMuyAlto= triglicerido >= 500
