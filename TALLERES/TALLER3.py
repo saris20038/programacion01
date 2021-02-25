@@ -30,7 +30,7 @@ elif (isJoven):
     print(MENSA_JOVEN)
 elif (isAdulto):
     print(ADULTO)
-elif(isAdultoMayor):
+else:
     print(ADULMAYOR)
 print("####chao####")
 
@@ -50,7 +50,7 @@ if(siIguales):
     print("Es el mismo año, bromista, quierase")
 elif(si1Mayor):
     print(f"han pasado {RESTA1} años")
-elif(si2Mayor):
+else:
     print(f"Faltan {RESTA2} años")
 
 ##PUNTO 4 DE CM A KM M Y MM
