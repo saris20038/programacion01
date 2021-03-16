@@ -1,6 +1,7 @@
 #SECOND QUIZ 
 #LISTS
 Celsiuslist = [36,37,38,35,36,38,37.5,38.2,41,37.4,38.6,39.1,40.3,33] 
+print(Celsiuslist)
 FarenheitList = []
 for EachValue in Celsiuslist:
     convertTo = round((EachValue * 1.8) + 32, 2)
