@@ -22,7 +22,7 @@ D- In dollars
 E- In Euros '''
 
 #CLASIFICACIÓN 
-ClasificationList =
+
 
 #CODIGO
 print(INITIAL_MENUN)
