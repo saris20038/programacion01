@@ -24,16 +24,46 @@ def showMaxMin (list):
     print(f" The highest value is {highest}, the smallest {smallest}, the mean is {mean}")
 
 
+#THIRD POINT 
+Number_hi= input("How many times do you want me to say hi: ")
+def welcomemessajes (number):
+    print( "Hi"* number)
+
+welcomemessajes(Number_hi)
+
 #FOURTH POINT 
 number_list= [3, 5, 66, 88, 22, 4, 2]
 def pairNumber(list):
     pairs = []
     for eachvalue in list:
         if eachvalue % 2 == 0 :
-        pairs.append (eachvalue)
+            pairs.append (eachvalue)
     return pairs
 
 pairNumber(number_list)
+
+#FIFTH POINT 
+number_list= [3, 5, 66, 88, 22, 40,80]
+def Morethan24(list):
+    more24 = []
+    for eachvalue in list:
+        if eachvalue > 24 :
+            more24.append (eachvalue)
+    print(more24) 
+
+Morethan24(number_list)
+
+#SIXTH POINT 
+weight_question= float(input("tell me your weight: "))
+height_question= float(input("your height too: "))
+
+def IMC (weight, height):
+    calculus = weight/(height*height)
+    print (calculus)
+    return IMC
+
+IMCcalculator (weight_question,height_question)
+
 #SEVENTH POINT 
 
 def farewellmessaje (name):
