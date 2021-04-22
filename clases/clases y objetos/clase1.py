@@ -29,18 +29,12 @@ class Humano ():
             ingresarMontos = input(preguntaIngresarMontos)
         return self.dinero
 
-class Biomedico (Humano):
-    def mantenimiendo (self, equipo):
-        print (f"Hola soy un ingeniero biomédico y me llamo {self.nombre} y puedo arreglar un {equipo}")
-
-
-humano1 = Humano("Daniel",18,1.83)
-
-humano1.hablar("Espero que estén muy bien")
-humano1.mostrarAtributos ()
-humano1.recorrerDistancia(5)
-totalAhorrado = humano1.ahorrarDinero()
-print (totalAhorrado)
-ingeniero = Biomedico("Daniel", 18,1.83)
-ingeniero.mostrarAtributos ()
-ingeniero.mantenimiendo("Electrocardiograma")
+class Artista (Usuario):
+    def __init__(self, idIn,nombreIn,edadIn, especialidadIn):
+        Persona.__init__(self, idIn,nombreIn,edadIn)
+        self.especialidad = especialidadIn
+    def tratar (self, enfermedadIn):
+        print (f'''        Hola soy el doctor {self.nombre}, me especializo 
+        en {self.especialidad} y voy a tratar la enfermedad {enfermedadIn}''')
+Ricardo = Doctor (1212124,"Ricardo",28,"cardiología")
+Ricardo.tratar ("arritmia")
