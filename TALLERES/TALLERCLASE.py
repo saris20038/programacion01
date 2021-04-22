@@ -1,5 +1,5 @@
 #FIRST POINT 
-print("#"*80)
+print("-"*80)
 class Torta ():
     '''Resposteria fina a tu gusto
     '''
@@ -17,7 +17,7 @@ torta1 = Torta("fresa", "cuadrada", "40 cm")
 torta1.mostrarAtributos()
 
 #SECOND POINT 
-print("#"*80)
+print("-"*80)
 class EstudianteUniversidad ():
     def __init__ (self, edadEntrada, nombreEntrada, idEntrada, carreraEntrada, semestreEntrada):
         print ("Hi, Im a student")
@@ -34,7 +34,7 @@ Student1 = EstudianteUniversidad("22", "Catalina Mesa", "505068", "Medicina", "5
 Student1.RepasoEspecifico("Histología", "3")
 
 #THIRD POINT 
-print("#"*80)
+print("-"*80)
 class Nutricionista ():
     def __init__ (self, edadEntrada, nombreEntrada,universidadEntrada):
         print ("Hi, Im a student")
@@ -50,12 +50,37 @@ Nutricionista1 = Nutricionista("21", "Susana Ramirez", "Universidad de Antioquia
 Nutricionista1.IMC(2 , 1.78)
 
 #FOURTH POINT 
-print("#"*80)
+print("-"*80)
 class Kangaroo():
     def __init__(self, nameInput, idInput, edadInput):
         print("Hi, Im a Kangaroo ")
         self.name = nameInput
-        self.specie = "Human"
-        self.name = nameInput 
-        self.height = heightInput
-        self.money = 0
+        self.idK= idInput
+        self.edadK= edadInput
+        print (f'''Soy un Canguro y me llamo {self.name}
+        tengo {self.edadK} años
+        con identificacion: {self.idK}''')
+    def recorrerDistancia (self, cantidadSaltos):
+        for i in range (cantidadSaltos):
+            print (f"El canguroha dado  {i+1} saltos")
+
+Kangaroo1 = Kangaroo("Alfonso", "39909", "2")
+Kangaroo1.recorrerDistancia(4)
+
+#FIFTH POINT 
+print("-"*80)
+class Instrumento ():
+    def __init__ (self, calsificacionEntr, nombreEntr, pesoentr ):
+        self.clasificacion = calsificacionEntr
+        self.nombre = nombreEntr
+        self.peso = pesoentr
+    def mostrarAtributos (self):
+        print (f'''    Esto es un {self.nombre}
+        un instrumento de {self.clasificacion} 
+        que pesa alrededor de{self.peso}''')
+    def InterpretarCancion(self, interpretacion):
+        print (f" El pianista esta tocando {interpretacion} en este momento")
+
+piano1=Instrumento("percusion", "piano", "230 kg")
+piano1.mostrarAtributos()
+piano1.InterpretarCancion("Moonlight")
