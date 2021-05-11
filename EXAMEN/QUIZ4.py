@@ -70,7 +70,7 @@ muestras = list(ecgData["muestra"].values())
 voltajes= list(ecgData["valor"].values())
 
 plt.plot(muestras, voltajes)
-plt.title ('EKG')
+plt.title ('EKG,a test that checks how your heart is functioning')
 plt.xlabel ('Time (mS)')
 plt.ylabel ('Voltage (microvoltios)')
 plt.savefig("cc.png")
@@ -84,7 +84,7 @@ ppgData = pd.read_csv ("ppg.csv",encoding="UTF-8",header=0,delimiter=";").to_dic
 muestras = list(ppgData["muestra"].values())
 voltaje1 = list(ppgData["valor"].values())
 plt.plot(muestras, voltaje1)
-plt.title ('PPG')
+plt.title ('PPG, to detect blood volume changes')
 plt.xlabel ('Time (uS)')
 plt.ylabel ('Voltage (microvoltios)')
 
