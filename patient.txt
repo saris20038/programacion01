@@ -1,0 +1,2 @@
+Client management document.
+nombre:ARA, Sickness :JAJJAJA, Price per medical checkout:3000.0
